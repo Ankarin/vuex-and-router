@@ -1,28 +1,32 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="ap">
+  
+   <List v-bind:users='users'/>
+   asdas
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import List from "./components/List";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld
+    List
+  },
+  data() {
+    return {
+      users: []
+    };
+  },
+  async mounted() {
+ this.$store.dispatch('fetchUsers')
   }
-}
+};
 </script>
 
-<style>
+<style lang='scss'>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color:black
 }
 </style>
