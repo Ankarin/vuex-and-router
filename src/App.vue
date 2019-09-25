@@ -12,11 +12,11 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Details from './components/Details'
 import List from './components/List'
-import {MdField,  MdCard} from 'vue-material/dist/components'
+import {  MdCard} from 'vue-material/dist/components'
 import 'vue-material/dist/vue-material.min.css'
 Vue.use(VueRouter)
 Vue.use(MdCard)
-Vue.use(MdField)
+
 
 const routes = [
     {name:'user',

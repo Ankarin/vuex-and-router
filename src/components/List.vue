@@ -1,7 +1,7 @@
 <template>
     <div class='list'>
         
-      <md-input type='text' placeholder='Search for name, email or username ' v-model="filter"></md-input>
+      <input type='text' placeholder='Search for name, email or username ' v-model="filter"></input>
     
 
 <div class='list' v-for='user in filteredUsers' :key='user.id'>

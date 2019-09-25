@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if='getUsers'>
     <h2>Details about {{getUsers[this.$route.params.id].name}}</h2>
 <ul>
     
