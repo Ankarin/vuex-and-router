@@ -1,6 +1,7 @@
 export default {
   state: {
-    users: []
+    users: [],
+    usersJson:null
   },
   actions: {
     async fetchUsers(ctx) {
@@ -13,12 +14,15 @@ export default {
   mutations: {
     mutateUsers(state, users) {
       state.users = users;
+     
     }
   },
 
   getters: {
     getUsers(state) {
+      
       return state.users;
-    }
+    },
+  
   }
 };
